@@ -122,7 +122,7 @@ while True:
           os.system("clear")
           printBoard(base_data[player_num]["right"], base_data[player_num]["left"], base_data[opp_num]["right"], base_data[opp_num]["left"])
           choice2 = int(input("How much chopsticks do you want to take away?\n"))
-          if choice2 > base_data[player_num][user_hand]:
+          if choice2 >= base_data[player_num][user_hand]:
             type("Sorry, you don't have that many chopsticks")
           elif choice2+base_data[player_num][user_hand] >=5:
             type("Sorry, that is too many chopsticks for the hand you are transferring too")
